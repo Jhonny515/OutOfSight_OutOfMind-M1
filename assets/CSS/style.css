@@ -30,6 +30,10 @@ body {
     align-items: center;
 }
 
+a:active{
+    text-decoration: none;
+}
+
 /* Definições do HEADER */
 /* Nome / Título do site */
 #titulo {
@@ -166,13 +170,16 @@ body {
 
 .itembox {
     display: inline-block;
+    vertical-align: top;
     width: 300px;
     white-space: normal;
+    margin-right: 30px;
 }
 
 .itembox .text2 {
     display: inline;
     margin: 10px;
+    vertical-align: top;
 }
 
 .hobbie-title {
