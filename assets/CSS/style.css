@@ -134,12 +134,24 @@ a:active{
     display: flex;
     justify-content: space-evenly;
     margin: 30px 0;
+    height: 10rem;
 }
 
 .imgIn {
-    height: 80px;
-    width: 80px;
-    border: 1px black solid;
+    height: 100%;
+    border: 2px white solid;
+}
+
+#pic1 {
+    transform: rotate(18deg);
+}
+
+#pic2 {
+    transform: rotate(-25deg);
+}
+
+#pic3 {
+    transform: rotate(5deg);
 }
 
 /* SECTION  Hobbies e Interesses */
@@ -190,11 +202,28 @@ a:active{
 
 .imgGallery {
     float: left;
+    padding: 10px;
     margin-right: 10px;
-    /* Tamanho até ter as imagens */
-    width: 5em;
-    height: 6em;
-    
+    height: 8em;    
+}
+
+.imgGallery:has(img){
+    height: 12em;
+}
+
+.imgGallery img {
+    height: 90%;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.citeFonte {
+    width: 12em;
+    border: 1px solid rgb(77, 76, 76);
+    font-size: 9px;
+    background-color: gray;
+    font-family: "Lato", sans-serif;
+    white-space: normal;
 }
 
 .text2 {
@@ -260,7 +289,7 @@ button {
     background: linear-gradient(#675FC5, #675FC5) padding-box, var(--linesNborders) border-box;
     font-family: 'Bowlby One', Arial, Helvetica, sans-serif;
     /* Animation */
-    transition: padding-top 1s;
+    transition: padding-top 10ms;
 }
 
 button:active {
@@ -278,9 +307,15 @@ button:active {
     margin: 15px 30%;
 }
 .rede {
-    width: 70px;
-    height: 70px;
-    border: 1px solid black;
+    width: 5em;
+}
+
+.upfront {
+    position: relative;
+    top: -1.3em;
+    margin-left: 0;
+    font-weight: 400;
+    text-align: center;
 }
 
 /* Display de seções */
